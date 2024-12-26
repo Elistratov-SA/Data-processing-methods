@@ -5,6 +5,9 @@ def EMDsmooth(t,y,nEMD,verbose=0):
     # y -- values
     # nEMD -- modes number to filter (the higher, the smoother
     # verbose -- flag to print max modes number
+
+    # please note that the algorithm is for 1D arrays only!!
+
     smooth=1*y
     if nEMD>0:
         IMF=EMD().emd(smooth,t)
